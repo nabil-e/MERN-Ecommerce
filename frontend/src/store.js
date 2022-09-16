@@ -1,11 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { productListReducer } from './reducers/productReducer'
+import { productListReducer, productDetailsReducer } from './reducers/productReducer'
 
 //const reducer = combineReducers({})
 
 const store = configureStore({
     reducer: {
-        productList: productListReducer
+        productList: productListReducer,
+        productDetails: productDetailsReducer
     }
 })
 
